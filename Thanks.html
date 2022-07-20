@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <title>Action Movies</title>
+
+ <style>
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+ 
+  
+  div.gallery img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .movietxt{
+    width: 50%;
+    font-size: 50px;
+    font-weight: bold;
+
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  </style>
+
+ </head>
+ <body>
+ <nav class="navbar">
+ <!-- LOGO -->
+  <div class="logo">Movie Center</div>
+ <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+ <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+ <!-- NAVIGATION MENUS -->
+        <div class="menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li class="categories">
+                <a href="#">Categories</a>
+ <!-- DROPDOWN MENU -->
+                      <ul class="dropdown">
+                         <li><a href="Action.html">Action </a></li>
+                         <li><a href="Romance.html">Romance</a></li>
+                         <li><a href="Horror.html">Horror</a></li>
+                         <li><a href="Animation.html">Animation</a></li>
+                         <li><a href="/">Drama</a></li>
+                     </ul>
+            </li>
+            <li><a href="Upcoming.html">Upcoming</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+      </div>
+   </ul>
+ </nav>
+
+
+<br>
+<br>
+<br>
+ <div class="container">
+   
+   <br>
+   <div class="main-box">
+    <br>
+    <br>
+    <div class="movietxt">
+    THANK YOU FOR CONTACTING US AND VISITING OUR WEBSITE!
+    </div>
+
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+  
+   <a href="index.html">Go to home</a>
+
+
+ </div>
+<br>
+<br>
+ <footer>
+    <div class="foot">
+      <h3>Movie Center</h3>
+      <p>This is the best movies website available</p>
+    </div>
+    <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+   </ul>
+ </footer>
+ </body>
+</html>

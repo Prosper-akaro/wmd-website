@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body, html {
+    height: 100%;
+}
+   body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+/****************************************NAV BAR*******************************************/
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .categories {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position:absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   .categories:hover .dropdown {
+    display: block;
+   }
+
+/****************************************HERO SECTION**********************************/
+   .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:static;
+  }
+
+  .hero-image-about {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero2.jpg");
+  
+    /* Set a specific height */
+    height: 80%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:static;
+  }
+
+  .hero-image-action {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero3.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:static;
+  }
+
+  .hero-image-romance {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero4.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:static;
+  }
+
+  .hero-image-horror {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero5.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:static;
+  }
+
+  .hero-image-anim {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero6.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:static;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+/**************************************************CATEGORIES BOXES*****************************/
+.container{
+    width:80%;
+    margin: 0 auto;
+  }
+  
+  .details{
+    text-align: center;
+  }
+  
+  .details h2{
+    color:#243238;
+    font-size:50px;
+    margin: 0;
+  }
+
+  .details .abt{
+    text-align: center;
+    width: 100%;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: 150%;
+    
+  }
+
+  
+  .details .abt-vid{
+    text-align: center;
+    width: 100%;
+    padding-right: 30%;
+    font-size: 150%;
+    
+  }
+  
+  .main-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .box{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+  
+  }
+  .box > * {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+  }
+  
+  .box::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .box:hover::before{
+    width: 95%;
+    height: 95%;
+    transition: all ease .50s;
+  }
+  
+  .box .icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .box .icon .fas{
+    color: #404044;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+    width: 70%;
+    border: 1px solid rgba(255,255,255, 0.1);
+  
+  }
+  
+  .box a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color:#D50000 ;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: 600 ;
+  }
+  .box a:hover{
+    background-color:#243238 ;
+  }
+  
+  .box .white-border{
+    border: 1px solid #ffffff;
+  }
+  
+  
+  .box-grey1{
+    background-image: url(images/movie1.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-grey2{
+    background-image: url(images/movie3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  
+  .box-grey3{
+    background-image: url(images/movie4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-grey4{
+    background-image: url(images/movie7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  
+  .box-grey5{
+    background-image: url(images/movie8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-grey6{
+    background-image: url(images/movie11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  
+  .box-grey7{
+    background-image: url(images/movie13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-grey8{
+    background-image: url(images/movie14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  
+
+  .box-red1{
+    background-image: url(images/movie2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-red2{
+    background-image: url(images/movie5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .box-red3{
+    background-image: url(images/movie6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-red4{
+    background-image: url(images/movie9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .box-red5{
+    background-image: url(images/movie10.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-red6{
+    background-image: url(images/movie12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-red7{
+    background-image: url(images/movie15.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+  .box-red8{
+    background-image: url(images/movie16.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+/*************************************MOVIE BOXES*****************************************/
+
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 3px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/************************************ABOUT PAGE*******************************************/
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: rgb(191, 205, 209);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+  /************************************FOOTER SECTION**************************************/
+
+  footer{
+      clear: both;
+    position: absolute;
+   
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.foot h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.foot p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+@media (max-width:500px) {
+    .foot{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+}
